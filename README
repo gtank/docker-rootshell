@@ -1,0 +1,7 @@
+Trivial privilege escalation via Docker
+
+This demo abuses membership in the `docker` group [1] to drop a root shell in
+the current working directory. This is a known issue, and is why you should not
+use the docker group. selinux enforcement prevents this from working.
+
+[1] https://docs.docker.com/installation/ubuntulinux/#create-a-docker-group
